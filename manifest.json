@@ -3,7 +3,11 @@
   "version": "1.0",
   "description": "Make reading space clean",
   "background_page": "background.html",
+  "icons": {"16": "icon.png",
+           "48": "icon128.png",
+          "128": "icon128.png" },
   "browser_action": {
+    "default_title": "CleanRead",      // optional; shown in tooltip
     "default_icon": "icon.png"
   },
   "permissions": [ 
