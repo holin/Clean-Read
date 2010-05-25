@@ -1,5 +1,6 @@
 // alert(location.location.host())
 var CleanRead = {};
+
 CleanRead.www_infoq_com = function($){
 	$("#rightbar").remove();
 	$("#sidebar").remove();
@@ -32,14 +33,13 @@ CleanRead.architects_dzone_com = function($){
 	$("#squeeze").css({margin: "0"});	
 }
 
-CleanRead.www_railsinside_com = function($){ 
-	$("#header").remove();
+CleanRead.www_railsinside_com = function($){  
 	$("#sidebar").remove();
 	$("#content").css({width: "auto"});	
-} 
+}   
 
-
-funcname = location.host.toString().replace(/\./gm, "_");
-func = CleanRead[funcname];
-// alert(func)
-if(func) func(jQuery);
+CleanRead.funcname = location.host.toString().replace(/\./gm, "_");
+CleanRead.func = CleanRead[CleanRead.funcname];
+if(CleanRead.func) {
+	CleanRead.func(jQuery);
+}
