@@ -1,0 +1,12 @@
+{
+  "name": "CleanRead",
+  "version": "1.0",
+  "description": "Make reading space clean",
+  "background_page": "background.html",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "permissions": [ 
+  	"tabs", "http://*/*", "https://*/*"
+  ] 
+}
