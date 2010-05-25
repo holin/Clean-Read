@@ -3,6 +3,10 @@
 
 A simplae Chrome Extension make web page clean for reading.
 
+### 广告太多！
+### 导航太多！
+### 真正用来阅读的区域太少！
+
 ## How can i install / upgrade?
 
 ### 1. git clone git://github.com/holin/Clean-Read.git
