@@ -22,6 +22,8 @@ CleanRead.xueyuan_cyzone_cn = function($){
 	$(".text").css({width: "910px"});
 }
 
+CleanRead.news_cyzone_cn = CleanRead.xueyuan_cyzone_cn;
+
 CleanRead.speckyboy_com = function($){ 
 	$("#sidebar").remove();
 	$("#contentmiddle").css({width: "auto"});	
