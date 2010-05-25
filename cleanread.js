@@ -19,7 +19,7 @@ CleanRead.xueyuan_cyzone_cn = function($){
 	$($(".Main_Content").get(0)).remove();
 	$(".right").remove(); 
 	$("div", $(".left").css({width: "935px"})).css({width: "935px"});
-	$(".text").css({width: "900px"});
+	$(".content div").css({width: "910px"}); 
 }
 
 CleanRead.news_cyzone_cn = CleanRead.xueyuan_cyzone_cn;
