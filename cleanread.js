@@ -21,6 +21,12 @@ CleanRead.xueyuan_cyzone_cn = function(){
 	$(".text").css({width: "910px"});
 }
 
+CleanRead.speckyboy_com = function(){
+	var $ = jQuery;
+	$("#sidebar").remove();
+	$("#contentmiddle").css({width: "auto"});
+	
+}
 funcname = location.host.toString().replace(/\./gm, "_");
 func = CleanRead[funcname];
 // alert(func)
