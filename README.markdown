@@ -24,6 +24,7 @@ A simplae Chrome Extension make web page clean for reading.
 - http://www.zreading.cn/archives/1766.html
 - http://speckyboy.com/2010/01/04/creating-a-web-development-environment-using-google-chrome-extensions/
 - http://architects.dzone.com/articles/couchios-hosted-couchdb
+- http://www.railsinside.com/tips/451-howto-unobtrusive-javascript-with-rails-3.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+RailsInside+(Rails+Inside)&utm_content=Google+Reader
 
 ## Reference 
 - http://code.google.com/chrome/extensions/getstarted.html

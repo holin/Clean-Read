@@ -23,16 +23,20 @@ CleanRead.xueyuan_cyzone_cn = function($){
 
 CleanRead.speckyboy_com = function($){ 
 	$("#sidebar").remove();
-	$("#contentmiddle").css({width: "auto"});
-	
+	$("#contentmiddle").css({width: "auto"});	
 }
 
 CleanRead.architects_dzone_com = function($){ 
 	$("#header").remove();
 	$(".sidebar").remove();
-	$("#squeeze").css({margin: "0"});
-	
+	$("#squeeze").css({margin: "0"});	
 }
+
+CleanRead.www_railsinside_com = function($){ 
+	$("#header").remove();
+	$("#sidebar").remove();
+	$("#content").css({width: "auto"});	
+} 
 
 
 funcname = location.host.toString().replace(/\./gm, "_");
