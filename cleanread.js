@@ -26,6 +26,15 @@ CleanRead.speckyboy_com = function($){
 	$("#contentmiddle").css({width: "auto"});
 	
 }
+
+CleanRead.architects_dzone_com = function($){ 
+	$("#header").remove();
+	$(".sidebar").remove();
+	$("#squeeze").css({margin: "0"});
+	
+}
+
+
 funcname = location.host.toString().replace(/\./gm, "_");
 func = CleanRead[funcname];
 // alert(func)
