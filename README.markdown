@@ -23,7 +23,7 @@ A simplae Chrome Extension make web page clean for reading.
 - http://www.infoq.com/cn/news/2010/05/agile-architecture-partnership
 - http://www.zreading.cn/archives/1766.html
 - http://speckyboy.com/2010/01/04/creating-a-web-development-environment-using-google-chrome-extensions/
-
+- http://architects.dzone.com/articles/couchios-hosted-couchdb
 
 ## Reference 
 - http://code.google.com/chrome/extensions/getstarted.html
