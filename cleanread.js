@@ -1,13 +1,13 @@
 // alert(location.location.host())
 var CleanRead = {};
 
-CleanRead.www_infoq_com = function($){
+CleanRead["www.infoq.com"] = function($){
 	$("#rightbar").remove();
 	$("#sidebar").remove();
 	$("#columns_container").css({padding: "0"});
 }
 
-CleanRead.www_zreading_cn = function($){
+CleanRead["www.zreading.cn"] = function($){
 	$("#header").remove();
 	$("#sidebar").remove();
 	$("#menuBox").remove(); 
@@ -15,32 +15,30 @@ CleanRead.www_zreading_cn = function($){
 	$(".entry").css({width: "auto"}); 
 }
 
-CleanRead.xueyuan_cyzone_cn = function($){
+CleanRead["*.cyzone.cn"] = function($){
 	$($(".Main_Content").get(0)).remove();
 	$(".right").remove(); 
 	$("div", $(".left").css({width: "935px"})).css({width: "935px"});
 	$(".content div").css({width: "910px"}); 
-}
+} 
 
-CleanRead.news_cyzone_cn = CleanRead.xueyuan_cyzone_cn;
-
-CleanRead.speckyboy_com = function($){ 
+CleanRead["speckyboy.com"] = function($){ 
 	$("#sidebar").remove();
 	$("#contentmiddle").css({width: "auto"});	
 }
 
-CleanRead.architects_dzone_com = function($){ 
+CleanRead["architects.dzone.com"] = function($){ 
 	$("#header").remove();
 	$(".sidebar").remove();
 	$("#squeeze").css({margin: "0"});	
 }
 
-CleanRead.www_railsinside_com = function($){  
+CleanRead["www.railsinside.com"] = function($){  
 	$("#sidebar").remove();
 	$("#content").css({width: "auto"});	
 } 
 
-CleanRead.roadtest_pcauto_com_cn = function($){
+CleanRead["*.pcauto.com.cn"] = function($){
 	$(".mainNav").remove();
 	$("#header").remove();
 	$(".ivy990x90").remove();
@@ -49,27 +47,14 @@ CleanRead.roadtest_pcauto_com_cn = function($){
 	$("#sideMain").remove();
 	$("#artExt").remove();
 	$("#sideExt").remove();
-	$("#footer").remove();
-	
-	$("#artMain").css({width: "auto"});	
-}
+	$("#footer").remove(); 
+	$(".left650").css({width: "950px"});	
+	$("#artText").css({width: "auto"});
+} 
 
-CleanRead.www_pcauto_com_cn = function($){
-	$(".mainNav").remove();
-	$("#header").remove();
-	$(".ivy990x90").remove();
-	$(".guide").remove();
-	$(".subMark").remove();
-	$("#sideMain").remove();
-	$("#artExt").remove();
-	$("#sideExt").remove();
-	$("#footer").remove();
-	
-	$("#artMain").css({width: "auto"});	
-}  
+CleanRead.broad_funcname = location.host.replace(/^\w+\./gm, "*.");
+CleanRead.exact_funcname = location.host;
 
-CleanRead.funcname = location.host.toString().replace(/\./gm, "_");
-CleanRead.func = CleanRead[CleanRead.funcname];
-if(CleanRead.func) {
-	CleanRead.func(jQuery);
-}
+CleanRead.func = CleanRead[CleanRead.exact_funcname] || CleanRead[CleanRead.broad_funcname];
+
+if(CleanRead.func) CleanRead.func(jQuery);
