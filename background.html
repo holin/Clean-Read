@@ -1,10 +1,20 @@
 <html>
 <head>
 <script>
+  function executeScript(tab) {
+	chrome.tabs.executeScript(tab.id, {file: "jquery.js"});
+	chrome.tabs.executeScript(tab.id, {file: "app.js"});
+  }
   // Called when the user clicks on the browser action.
   chrome.browserAction.onClicked.addListener(function(tab) {
-	chrome.tabs.executeScript(null, {file: "jquery.js"});
-	chrome.tabs.executeScript(null, {file: "app.js"});
+	chrome.windows.getCurrent(function(w){
+		chrome.tabs.getAllInWindow(w.id, function printTabs(tabs) { 
+			for (var i = 0; i < tabs.length; i++) { 
+				// alert(tabs[i])
+				executeScript(tabs[i]);
+			} 
+		});
+	}); 
   });  
 </script>
 </head>
