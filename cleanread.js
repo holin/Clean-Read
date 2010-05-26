@@ -38,7 +38,35 @@ CleanRead.architects_dzone_com = function($){
 CleanRead.www_railsinside_com = function($){  
 	$("#sidebar").remove();
 	$("#content").css({width: "auto"});	
-}   
+} 
+
+CleanRead.roadtest_pcauto_com_cn = function($){
+	$(".mainNav").remove();
+	$("#header").remove();
+	$(".ivy990x90").remove();
+	$(".guide").remove();
+	$(".subMark").remove();
+	$("#sideMain").remove();
+	$("#artExt").remove();
+	$("#sideExt").remove();
+	$("#footer").remove();
+	
+	$("#artMain").css({width: "auto"});	
+}
+
+CleanRead.www_pcauto_com_cn = function($){
+	$(".mainNav").remove();
+	$("#header").remove();
+	$(".ivy990x90").remove();
+	$(".guide").remove();
+	$(".subMark").remove();
+	$("#sideMain").remove();
+	$("#artExt").remove();
+	$("#sideExt").remove();
+	$("#footer").remove();
+	
+	$("#artMain").css({width: "auto"});	
+}  
 
 CleanRead.funcname = location.host.toString().replace(/\./gm, "_");
 CleanRead.func = CleanRead[CleanRead.funcname];
