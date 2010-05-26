@@ -7,11 +7,14 @@
   }
   // Called when the user clicks on the browser action.
   chrome.browserAction.onClicked.addListener(function(tab) {
+	executeScript(tab); //make current selected tab clean
 	chrome.windows.getCurrent(function(w){
 		chrome.tabs.getAllInWindow(w.id, function printTabs(tabs) { 
 			for (var i = 0; i < tabs.length; i++) { 
-				// alert(tabs[i])
-				executeScript(tabs[i]);
+				var _tab = tabs[i]
+				if(tab.id != _tab.id) { //make other tabs clean
+					executeScript(_tab);
+				}
 			} 
 		});
 	}); 
