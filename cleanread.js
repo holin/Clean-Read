@@ -60,7 +60,7 @@ CleanRead["www.techweb.com.cn"] = function($){
 	$("#left div").css({width: "950px", background: "transparent"});
 }
 
-CleanRead["*.iresearch.cn"] = function($){
+CleanRead["news.iresearch.cn"] = function($){
 	$(".header").remove();
 	$(".c_160").remove();
 	$(".m_x_0").remove();
