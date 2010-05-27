@@ -27,6 +27,7 @@ A simplae Chrome Extension make web page clean for reading.
 - http://architects.dzone.com/articles/couchios-hosted-couchdb
 - http://www.pcauto.com.cn/teach/xcdg/1005/1158566.html
 - http://roadtest.pcauto.com.cn/yc/1003/1118586_1.html
+- http://www.techweb.com.cn/news/2010-05-27/610430.shtml
 - http://www.railsinside.com/tips/451-howto-unobtrusive-javascript-with-rails-3.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+RailsInside+(Rails+Inside)&utm_content=Google+Reader
 
 ## Reference 
