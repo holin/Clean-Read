@@ -60,6 +60,17 @@ CleanRead["www.techweb.com.cn"] = function($){
 	$("#left div").css({width: "950px", background: "transparent"});
 }
 
+CleanRead["*.iresearch.cn"] = function($){
+	$(".header").remove();
+	$(".c_160").remove();
+	$(".m_x_0").remove();
+	$(".c_800").css({width: "auto"});
+	$(".b_caption").css({width: "auto"});
+	$(".b_content").css({width: "auto", background: "transparent"});
+	
+}
+
+
 CleanRead.broad_funcname = location.host.replace(/^\w+\./gm, "*.");
 CleanRead.exact_funcname = location.host;
 
