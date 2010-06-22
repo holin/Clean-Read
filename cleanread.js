@@ -70,6 +70,13 @@ CleanRead["news.iresearch.cn"] = function($){
 	
 }
 
+CleanRead["sheddingbikes.com"] = function($){
+	$("#sidebar").remove(); 
+ 	$("#feed-entry").css({width: "900px"});	
+}
+
+
+
 
 CleanRead.broad_funcname = location.host.replace(/^\w+\./gm, "*.");
 CleanRead.exact_funcname = location.host;
