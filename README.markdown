@@ -1,3 +1,5 @@
+I make a new Chrome extension to do things like this one, checkout it hear: https://github.com/holin/clean_reader
+
 # Clean Read
 ## What is it?
 
